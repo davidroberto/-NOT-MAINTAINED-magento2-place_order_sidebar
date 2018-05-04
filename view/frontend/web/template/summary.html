@@ -1,0 +1,13 @@
+<div class="opc-block-summary" data-bind="blockLoader: isLoading">
+    <span data-bind="i18n: 'Order Summary'" class="title"></span>
+    <!-- ko foreach: elems() -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>
+<!-- ko if: (isVisible()) -->
+<div class="actions-toolbar-trigger" id="place-order-trigger-wrapper">
+    <button type="button" class="button action primary" id="place-order-trigger" value="Place Order" >
+        <span>Place Order</span>
+    </button>
+</div>
+<!-- /ko -->

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="checkout" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="DavidRobert_PlaceOrderSidebar::css/place_order_sidebar.css"/>
+    </head>
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="sidebar" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="summary" xsi:type="array">
+                                            <item name="component" xsi:type="string">DavidRobert_PlaceOrderSidebar/js/view/summary</item>
+                                            <item name="config" xsi:type="array">
+                                                <item name="template" xsi:type="string">DavidRobert_PlaceOrderSidebar/summary</item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

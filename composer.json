@@ -1,0 +1,22 @@
+{
+    "name": "davidrobert/module-placeordersidebar",
+    "description": "Install a unique \"place order\" button in the sidebar of the checkout, instead of one button per payment method",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DavidRobert\\PlaceOrderSidebar\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
